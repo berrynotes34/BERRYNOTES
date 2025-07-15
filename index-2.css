@@ -26,7 +26,7 @@
 }
 
 .container h1 img {
-  width: 150px;
+  width: 200px;
   image-rendering: auto;
   image-rendering: crisp-edges;
   padding: 5px 25px;
@@ -34,7 +34,7 @@
 
 .container button img {
   width: 25px;
-  margin-right: 20px;
+  margin-right: 1px;
 }
 
 .container button {
@@ -51,6 +51,7 @@
   padding: 15px 25px;
   margin: 30px 0 20px;
   cursor: pointer;
+  flex-wrap:nowrap;
 }
 
 .input-box {
@@ -69,16 +70,15 @@
 .input-box img {
   width: 100px;
   position: absolute;
-  bottom: 20px;
-  right: 14px;
+  bottom: 5px;
+  right: 20px;
   cursor: pointer;
 }
-
-/* Home link styles */
+/*Home link styles*/
 .home-link {
   position: absolute;
   top: 30px;
-  left: 50px;
+  left: 20px;
   text-decoration: none;
   z-index: 999;
 }
@@ -90,14 +90,65 @@
   color: maroon;
   font-weight: bold;
   font-size: 16px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: none;
   border-radius: 20px;
   box-shadow: 2px 2px 5px;
 }
 
 .home-button img {
-  width: 30px;
+  width: 25px;
   height: 30px;
   margin-right: 10px;
 }
+
+@media (max-width:768px) {
+.container {
+ padding: 4% 3%;
+}
+
+.container h1 {
+ font-size: 40px;
+ flex-direction: column;
+ text-align: center;
+}
+
+.container h1 img{
+ width: 200px;
+ left: 10px;
+ margin: auto;
+}
+
+.container button{
+ font-size: 14px;
+ padding: 12px 20px;
+}
+
+.input-box {
+ width: 100%;
+ padding: 30px;
+}
+
+.input-box img{
+ width: 70px;
+ right: 10px;
+ bottom: 5px;
+}
+
+.home-link {
+ top: 240px;
+ left: 10px;
+}
+
+.home-button {
+ font-size: 5px;
+ padding: 12px 20px;
+}
+
+.home-button img {
+ width: 10px;
+ height: 25px;
+}
+}
+
+
