@@ -39,11 +39,12 @@ body {
   text-align: justify;
 }
 
-.intro-button-container {
+.intro-button-container{
   display: flex;
-  justify-content: center;
+  left: 2px;
   align-items: center;
-  margin: 40px 0;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .visit-btn {
