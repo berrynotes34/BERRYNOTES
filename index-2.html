@@ -36,5 +36,15 @@
   </div>
 
   <script src="index-2.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log("Service Worker Registered!", reg))
+        .catch(err => console.error("Service Worker registration failed:", err));
+    });
+  }
+</script>3
 </body>
 </html>
